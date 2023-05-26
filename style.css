@@ -1,0 +1,66 @@
+:root{
+  --background_facts:rgb(248, 246, 246);
+}
+
+html,body {
+padding: 0px;
+margin : 0px ;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.app-area{
+  margin : 0px auto;
+  width: 100%;
+  max-width: 560px ;
+  height : 125vh;
+  display :flex;
+  flex-direction: column;
+  background-color:pink; ;
+}
+.app-header-container{
+  padding:5px;
+  width: 100%;
+  height : 100px;
+  box-sizing: border-box;
+}
+
+.app-header-container > .app-header{
+ 
+  border-radius: 40px;
+  background :var(--background_facts);
+  display :flex;
+  align-items :center;
+  justify-content: center;
+}
+.app-header-container > .app-header > .app-logo{
+width : 100px;
+}
+.content-container{
+padding : 10px 10px;
+box-sizing: border-box;
+height: calc(100vh - 20px);
+
+}
+.content-container > .facts-list{
+list-style-type: none;
+padding:0px;
+}
+.content-container > .facts-list > .fact-item{
+  background :var(--background_facts);
+  min-height: 50px;
+  border-radius:40px ;
+  display: flex;
+  align-items:center;
+  padding:10px;
+  max-width : 560px;
+  margin-bottom: 10px;
+  height : 100px;
+
+}
+.no-data-container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
